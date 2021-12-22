@@ -22,7 +22,3 @@ function modal(btn, popup) {
     document.body.style.overflow = "";
   }
 }
-
-var privacyCall = document.querySelector('.policy-call-btn');
-var privacyPopup = document.querySelector('.the_popup--privacy');
-privacyCall.addEventListener('click', modal(privacyCall, privacyPopup));

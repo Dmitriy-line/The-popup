@@ -1,6 +1,6 @@
 {
 	"name": "the-popup",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "simple popup",
 	"main": "index.html",
 	"author": "Dmitry-Pasternak",
@@ -32,5 +32,8 @@
 		"sass": "latest",
 		"transform-runtime": "0.0.0",
 		"webp-converter": "2.2.3"
+	},
+	"dependencies": {
+		"publish": "^0.6.0"
 	}
 }
