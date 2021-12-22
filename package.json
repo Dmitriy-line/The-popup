@@ -1,7 +1,7 @@
 {
-	"name": "fls-gulp",
+	"name": "the-popup",
 	"version": "1.0.0",
-	"description": "Сборка gulp",
+	"description": "simple popup",
 	"main": "index.html",
 	"author": "Dmitry-Pasternak",
 	"license": "ISC",

@@ -25,4 +25,6 @@ function modal(btn, popup) {
 
 var formCallBtn = document.querySelector('.popup-privacy__call-btn');
 var privacyPopup = document.querySelector('.popup-privacy');
+
+
 formCallBtn.addEventListener('click', modal(formCallBtn, privacyPopup));
