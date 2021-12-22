@@ -1,8 +1,27 @@
+<<<<<<< HEAD
 :root{
   --popup-bg:rgba(31, 26, 26, 0.836);
 }
 
 .popup {
+=======
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --popup-bg: rgba(31, 26, 26, 0.836);
+}
+
+
+
+.the-popup {
+>>>>>>> dev
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +37,16 @@
     opacity: 1;
     visibility: visible;
   }
+<<<<<<< HEAD
+=======
+  &.open {
+    .the-popup-inner {
+      opacity: 1;
+    }
+  }
+>>>>>>> dev
 }
-.popup-inner {
+.the-popup-inner {
   position: absolute;
   top: 50px;
   padding: 20px 10px;
@@ -31,7 +58,12 @@
     max-width: 90%;
   }
 }
+<<<<<<< HEAD
 .popup-close {
+=======
+
+.the-popup-close {
+>>>>>>> dev
   position: absolute;
   top: 10px;
   right: 15px;
@@ -41,11 +73,11 @@
   background: #fff;
   cursor: pointer;
   transition: ease-in 0.3s;
-  &:hover{
+  &:hover {
     transform: rotate(90deg);
   }
-  &::before{
-    content:'';
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,8 +86,8 @@
     height: 2px;
     background: var(--popup-bg);
   }
-  &::after{
-    content:'';
+  &::after {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
