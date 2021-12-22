@@ -26,8 +26,8 @@ function modal(btn, popup) {
 }
 
 
-let formCallBtn = document.querySelector('.popup-privacy__call-btn');
-let privacyPopup = document.querySelector('.popup-privacy');
+let privacyCall = document.querySelector('.policy-call-btn');
+let privacyPopup = document.querySelector('.the_popup--privacy');
 
 
-formCallBtn.addEventListener('click', modal(formCallBtn, privacyPopup));
+privacyCall.addEventListener('click', modal( privacyCall, privacyPopup));

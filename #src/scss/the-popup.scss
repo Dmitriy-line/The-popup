@@ -7,12 +7,13 @@ html {
   box-sizing: inherit;
 }
 
-:root{
-  --popup-bg:rgba(31, 26, 26, 0.836);
+:root {
+  --popup-bg: rgba(31, 26, 26, 0.836);
 }
 
 
-.popup {
+
+.the-popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,12 +31,12 @@ html {
     visibility: visible;
   }
   &.open {
-      .popup-inner{
-        opacity: 1;
-      }
+    .the-popup-inner {
+      opacity: 1;
+    }
   }
 }
-.popup-inner {
+.the-popup-inner {
   position: absolute;
   top: 50px;
   padding: 20px 10px;
@@ -50,7 +51,7 @@ html {
   }
 }
 
-.popup-close {
+.the-popup-close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -60,11 +61,11 @@ html {
   background: #fff;
   cursor: pointer;
   transition: ease-in 0.3s;
-  &:hover{
+  &:hover {
     transform: rotate(90deg);
   }
-  &::before{
-    content:'';
+  &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,8 +74,8 @@ html {
     height: 2px;
     background: var(--popup-bg);
   }
-  &::after{
-    content:'';
+  &::after {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
