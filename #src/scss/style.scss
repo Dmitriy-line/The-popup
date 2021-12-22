@@ -1,17 +1,16 @@
-// базовые подключения
-@import "fonts-styles";
-@import "fonts";
-@import "global-styles";
-@import "settings";
-// подключения компонентов страницы
-//HEADER
-
-//BODY
-//MODALKA
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root{
   --popup-bg:rgba(31, 26, 26, 0.836);
 }
+
 
 .popup {
   position: fixed;
@@ -25,9 +24,15 @@
   background: var(--popup-bg);
   opacity: 0;
   visibility: hidden;
+  transition: all linear 0.3s;
   &.open {
     opacity: 1;
     visibility: visible;
+  }
+  &.open {
+      .popup-inner{
+        opacity: 1;
+      }
   }
 }
 .popup-inner {
@@ -38,10 +43,13 @@
   height: 85vh;
   overflow: auto;
   background: #fff;
+  transition: all 0.2s linear 0.5s;
+  opacity: 0;
   @media (max-width: 768px) {
     max-width: 90%;
   }
 }
+
 .popup-close {
   position: absolute;
   top: 10px;
@@ -76,6 +84,3 @@
     background: var(--popup-bg);
   }
 }
-//FOOTER
-
-// подключения других элементов
