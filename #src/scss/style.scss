@@ -1,14 +1,3 @@
-// базовые подключения
-@import "fonts-styles";
-@import "fonts";
-@import "global-styles";
-@import "settings";
-// подключения компонентов страницы
-//HEADER
-
-//BODY
-//MODALKA
-
 :root{
   --popup-bg:rgba(31, 26, 26, 0.836);
 }
@@ -76,6 +65,3 @@
     background: var(--popup-bg);
   }
 }
-//FOOTER
-
-// подключения других элементов
