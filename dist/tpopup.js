@@ -1,13 +1,24 @@
 "use strict";
 
-function modal(btn, popup) {
+function Modal(btn, popup) {
   var closePopup = document.querySelectorAll('.tpopup-close');
-  btn = btn;
-  popup = popup;
-  btn.addEventListener('click', function () {
-    popup.classList.add('open');
-    document.body.style.overflow = "hidden";
-  });
+  this.btn = btn;
+  this.popup = popup;
+
+  if (btn.length > 1) {
+    btn.forEach(function (item) {
+      item.addEventListener('click', function () {
+        popup.classList.add('open');
+        document.body.style.overflow = "hidden";
+      });
+    });
+  } else {
+    btn.addEventListener('click', function () {
+      popup.classList.add('open');
+      document.body.style.overflow = "hidden";
+    });
+  }
+
   closePopup.forEach(function (item) {
     item.addEventListener('click', closeModal);
   });

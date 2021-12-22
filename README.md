@@ -17,11 +17,15 @@
 ### Import js
 ```javascript
 import('../../node_modules/tpopup/dist/js/tpopup.js');
+or
+import('../../node_modules/tpopup/dist/js/tpopup.min.js');
 ```
 
 ### Import css
 ```javascript
 @import "../../node_modules/tpopup/dist/css/tpopup";
+or
+@import "../../node_modules/tpopup/dist/css/tpopup.min.css";
 ```
 
 ### HTML
@@ -51,9 +55,11 @@ create an element that will trigger the popup, and assign any class to it.
 
 ### js  
 assigne the variable to the trigger ellement and to the ``<div class="tpopup the_popup--privacy">``.
-```javascript
-let privacyCall = document.querySelector('.policy-call-btn');
- let privacyPopup = document.querySelector('.the_popup--privacy');
+if trigger ellements more then one - use ``querySelectorAll``
 
- privacyCall.addEventListener('click', modal( privacyCall, privacyPopup));
+```javascript
+let formPopup = new Modal(
+  document.querySelector('.policy-call-btn'),
+  document.querySelector('.tpopup')
+)
 ```

@@ -1,12 +1,22 @@
-function modal(btn, popup) {
+function Modal(btn, popup) {
   const closePopup = document.querySelectorAll('.tpopup-close');
-  btn = btn;
-  popup = popup;
+  this.btn = btn;
+  this.popup = popup;
 
-  btn.addEventListener('click', () => {
-    popup.classList.add('open');
-    document.body.style.overflow = "hidden";
-  })
+  if (btn.length > 1) {
+    btn.forEach(item => {
+      item.addEventListener('click', () => {
+        popup.classList.add('open');
+        document.body.style.overflow = "hidden";
+      })
+    })
+  } else {
+    btn.addEventListener('click', () => {
+      popup.classList.add('open');
+      document.body.style.overflow = "hidden";
+    })
+  }
+
 
   closePopup.forEach(item => {
     item.addEventListener('click', closeModal);
@@ -24,4 +34,6 @@ function modal(btn, popup) {
   }
 
 }
+
+
 
