@@ -1,5 +1,5 @@
 function modal(btn, popup) {
-  const closePopup = document.querySelectorAll('.popup-close');
+  const closePopup = document.querySelectorAll('.the-popup-close');
   btn = btn;
   popup = popup;
 

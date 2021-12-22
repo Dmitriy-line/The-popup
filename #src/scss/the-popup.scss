@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 :root{
   --popup-bg:rgba(31, 26, 26, 0.836);
 }
 
-.popup {
-=======
+
 html {
   box-sizing: border-box;
 }
@@ -21,10 +20,6 @@ html {
 
 
 .the-popup {
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> dev
   position: fixed;
   top: 0;
   left: 0;
@@ -36,18 +31,22 @@ html {
   background: var(--popup-bg);
   opacity: 0;
   visibility: hidden;
+  transition: all linear 0.2s;
   &.open {
     opacity: 1;
     visibility: visible;
   }
-<<<<<<< HEAD
-=======
+
   &.open {
     .the-popup-inner {
       opacity: 1;
     }
   }
->>>>>>> dev
+  &.open {
+    .the-popup-close {
+      opacity: 1;
+    }
+  }
 }
 .the-popup-inner {
   position: absolute;
@@ -57,21 +56,16 @@ html {
   height: 86vh;
   overflow: auto;
   background: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0.4s;
   @media (max-width: 768px) {
     max-width: 90%;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.popup-close {
-=======
+
+
 
 .the-popup-close {
->>>>>>> dev
-=======
-
-.the-popup-close {
->>>>>>> dev
   position: absolute;
   top: 10px;
   right: 15px;
@@ -80,7 +74,8 @@ html {
   border-radius: 100px;
   background: #fff;
   cursor: pointer;
-  transition: ease-in 0.3s;
+  opacity: 0;
+  transition: all ease-in 0.3s;
   &:hover {
     transform: rotate(90deg);
   }
