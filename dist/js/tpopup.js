@@ -1,7 +1,7 @@
 "use strict";
 
 function modal(btn, popup) {
-  var closePopup = document.querySelectorAll('.the-popup-close');
+  var closePopup = document.querySelectorAll('.tpopup-close');
   btn = btn;
   popup = popup;
   btn.addEventListener('click', function () {

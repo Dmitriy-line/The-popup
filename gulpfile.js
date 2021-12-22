@@ -14,8 +14,8 @@ let path = {
 	},
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-		css: source_folder + "/scss/the-popup.scss",
-		js: source_folder + "/js/the-popup.js",
+		css: source_folder + "/scss/tpopup.scss",
+		js: source_folder + "/js/tpopup.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},

@@ -1,6 +1,6 @@
 {
-	"name": "the-popup",
-	"version": "1.0.4",
+	"name": "tpopup",
+	"version": "1.0.2",
 	"description": "simple popup",
 	"main": "index.html",
 	"author": "Dmitry-Pasternak",
