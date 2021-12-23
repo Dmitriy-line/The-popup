@@ -1,39 +1,8 @@
 {
-	"name": "tpopup",
-	"version": "1.0.4",
-	"description": "simple popup",
+	"name": "bopup",
+	"version": "0.0.1",
+	"description": "Component to create a popup",
 	"main": "index.html",
-	"author": "Dmitry-Pasternak",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/core": "^7.16.0",
-		"@babel/preset-env": "^7.16.0",
-		"browser-sync": "latest",
-		"del": "latest",
-		"gulp": "latest",
-		"gulp-autoprefixer": "latest",
-		"gulp-babel": "^8.0.0",
-		"gulp-clean-css": "latest",
-		"gulp-file-include": "latest",
-		"gulp-fonter": "latest",
-		"gulp-group-css-media-queries": "latest",
-		"gulp-imagemin": "^7.1.0",
-		"gulp-newer": "latest",
-		"gulp-plumber": "latest",
-		"gulp-rename": "latest",
-		"gulp-sass": "latest",
-		"gulp-svg-sprite": "latest",
-		"gulp-ttf2woff": "latest",
-		"gulp-ttf2woff2": "latest",
-		"gulp-uglify-es": "latest",
-		"gulp-webp-html": "latest",
-		"gulp-webpcss": "latest",
-		"imagemin-webp": "^5.1.0",
-		"sass": "latest",
-		"transform-runtime": "0.0.0",
-		"webp-converter": "2.2.3"
-	},
-	"dependencies": {
-		"publish": "^0.6.0"
-	}
+	"author": "Dmitry Pasternak",
+	"license": "ISC"
 }

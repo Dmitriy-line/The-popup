@@ -14,8 +14,8 @@ let path = {
 	},
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-		css: source_folder + "/scss/tpopup.scss",
-		js: source_folder + "/js/tpopup.js",
+		css: source_folder + "/scss/bopup.scss",
+		js: source_folder + "/js/bopup.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
@@ -94,9 +94,9 @@ function css() {
 function js() {
 	return src(path.src.js)
 		.pipe(fileinclude())
-		.pipe(babel({
-			presets: ['@babel/env']
-		}))
+		// .pipe(babel({
+		// 	presets: ['@babel/env']
+		// }))
 		.pipe(gulp.dest('dist'))
 		.pipe(dest(path.build.js))
 		.pipe(

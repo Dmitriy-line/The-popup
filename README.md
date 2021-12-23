@@ -1,65 +1,78 @@
-## tpopup
-### Easy to use popup
+## bopup
+<img src="https://img.shields.io/badge/bopup-v%200.0.1-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-10-orange">
 
-
+### Component to create a popup:
 
 ♦ suitable for
 
-* Pop-up forms
-* Privacy Policy
-* Other pop-ups
+- Pop-up forms
+- Privacy Policy
+- pop-up gallerys
 
+ ### Install from NPM.
 
-> ### Install from NPM.
-
->     npm i tpopup
+`npm i bopup`
 
 ### Import js
+
 ```javascript
-import('../../node_modules/tpopup/dist/js/tpopup.js');
-or
-import('../../node_modules/tpopup/dist/js/tpopup.min.js');
+import Bopup from "../../node_modules/bopup/dist/js/bopup.js";
 ```
 
 ### Import css
+
 ```javascript
-@import "../../node_modules/tpopup/dist/css/tpopup";
-or
-@import "../../node_modules/tpopup/dist/css/tpopup.min.css";
+@import '../../node_modules/bopup/dist/css/bopup.css';
 ```
 
-### HTML
 
-To create several popups, just add an extra class to the  `<div class="tpopup">`, <br> for  example ``<div class="tpopup the_popup--privacy">``
+### Add bopup HTML Layout
 
-You can put any content in to the`` <div class="tpopup-inner">``
-
-### Html markup
 ```html
-<div class="tpopup the_popup--privacy">
-	<!-- close-button -->
-	<div class="tpopup-close"></div>
-	<!-- popup inner -->
-		<div class="tpopup-inner">
-			<!-- content -->
-			<h2 class="privacy__title">privacy policy</h2>
-            <p>Any content.</p>
-		</div>
- </div>
+<div class="bopup bopup_form">
+  <!-- close-button -->
+  <div class="bopup-close-button"></div>
+  <!-- popup inner -->
+  <div class="bopup-content-wrapper">
+    <!-- content -->
+  </div>
+</div>
 ```
-create an element that will trigger the popup, and assign any class to it.
+
+### Several popups
+
+To create several popups, just add an extra class to the `<div class="bopup">`, <br> for example `<div class="bopup bopup_form">`
+
+Add any content in to the` <div class="bopup-content-wrapper">`
+
+
+create element that will trigger the popup.
+
 ##### Example
+
 ```html
-<span class="policy-call-btn">privacy policy</span>
+<button class="btn">callback form</button>
+```
+```html
+<span class="btn">callback form</span>
+```
+```html
+<div class="btn">callback form</div>
 ```
 
-### js  
-assigne the variable to the trigger ellement and to the ``<div class="tpopup the_popup--privacy">``.
-if trigger ellements more then one - use ``querySelectorAll``
+### Initialize bopup
+Finally, we need to initialize bopup in JS:
 
 ```javascript
-let formPopup = new Modal(
-  document.querySelector('.policy-call-btn'),
-  document.querySelector('.tpopup')
+let popupForm = new Bopup(
+  document.querySelector('.btn'),
+  document.querySelector('.bopup_form')
 )
+```
+
+### css
+```css
+ .bopup-content-wrapper {
+   background: #fff;
+  }
 ```

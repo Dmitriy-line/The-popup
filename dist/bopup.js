@@ -1,8 +1,6 @@
-function Modal(btn, popup) {
-  const closePopup = document.querySelectorAll('.tpopup-close');
-  this.btn = btn;
-  this.popup = popup;
-
+function Bopup(btn, popup) {
+  const closePopup = document.querySelectorAll('.bopup-close-button');
+ 
   if (btn.length > 1) {
     btn.forEach(item => {
       item.addEventListener('click', () => {
@@ -34,6 +32,8 @@ function Modal(btn, popup) {
   }
 
 }
+
+export default Bopup
 
 
 
