@@ -1,5 +1,10 @@
+/**
+ * Create PopUp
+ * @param {Array|HTMLElement} btn button to show
+ * @param {HTMLElement} popup PopUp node
+ */
 function Bopup(btn, popup) {
-  const closePopup = document.querySelectorAll('.bopup-close-button');
+  const closePopup = popup.querySelectorAll('.bopup-close-button');
  
   if (btn.length > 1) {
     btn.forEach(item => {
@@ -34,6 +39,3 @@ function Bopup(btn, popup) {
 }
 
 export default Bopup
-
-
-
