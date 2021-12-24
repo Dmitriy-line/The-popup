@@ -36,5 +36,3 @@ function bopup(btn, popup) {
   }
 }
 
-bopup(document.querySelector('.btn'), document.querySelector('.bopup_form'));
-bopup(document.querySelector('.policy-call-btn'), document.querySelector('.form'));
