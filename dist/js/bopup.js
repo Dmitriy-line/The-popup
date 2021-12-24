@@ -1,5 +1,10 @@
-function Bopup(btn, popup) {
-  const closePopup = document.querySelectorAll('.bopup-close-button');
+/**
+ * Create PopUp
+ * @param {Array|HTMLElement} btn button to show
+ * @param {HTMLElement} popup PopUp node
+ */
+function bopup(btn, popup) {
+  const closePopup = popup.querySelectorAll('.bopup-close-button');
  
   if (btn.length > 1) {
     btn.forEach(item => {
@@ -15,7 +20,6 @@ function Bopup(btn, popup) {
     })
   }
 
-
   closePopup.forEach(item => {
     item.addEventListener('click', closeModal);
   })
@@ -30,10 +34,7 @@ function Bopup(btn, popup) {
     popup.classList.remove('open');
     document.body.style.overflow = "";
   }
-
 }
 
-export default Bopup
-
-
-
+bopup(document.querySelector('.btn'), document.querySelector('.bopup_form'));
+bopup(document.querySelector('.policy-call-btn'), document.querySelector('.form'));
