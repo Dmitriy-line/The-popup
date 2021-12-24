@@ -5,6 +5,7 @@
  */
 function bopup(btn, popup) {
   const closePopup = popup.querySelectorAll('.bopup-close-button');
+
  
   if (btn.length > 1) {
     btn.forEach(item => {
@@ -36,5 +37,4 @@ function bopup(btn, popup) {
   }
 }
 
-bopup(document.querySelector('.btn'), document.querySelector('.bopup_form'));
-bopup(document.querySelector('.policy-call-btn'), document.querySelector('.form'));
+
