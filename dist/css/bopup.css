@@ -14,10 +14,6 @@ html {
           box-sizing: inherit;
 }
 
-:root {
-  --popup-bg: rgba(31, 26, 26, 0.836);
-}
-
 .bopup {
   position: fixed;
   top: 0;

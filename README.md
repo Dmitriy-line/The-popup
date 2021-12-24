@@ -1,5 +1,6 @@
 ## bopup
-<img src="https://img.shields.io/badge/bopup-v%200.0.1-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-10-orange">
+
+<img src="https://img.shields.io/badge/bopup-v%200.0.2-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-50-orange">
 
 ### Component to create a popup:
 
@@ -9,7 +10,7 @@
 - Privacy Policy
 - pop-up gallerys
 
- ### Install from NPM.
+### Install from NPM.
 
 `npm i bopup`
 
@@ -25,16 +26,17 @@ import Bopup from "../../node_modules/bopup/dist/js/bopup.js";
 @import '../../node_modules/bopup/dist/css/bopup.css';
 ```
 
-
 ### Add bopup HTML Layout
 
 ```html
-<div class="bopup bopup_form">
-  <!-- close-button -->
+<!-- popup container -->
+<div class="bopup">
+  <!-- close-popup-button -->
   <div class="bopup-close-button"></div>
-  <!-- popup inner -->
+  <!-- popup wrapper -->
   <div class="bopup-content-wrapper">
-    <!-- content -->
+    <!--popup content -->
+    <!-- any block or content -->
   </div>
 </div>
 ```
@@ -45,34 +47,34 @@ To create several popups, just add an extra class to the `<div class="bopup">`, 
 
 Add any content in to the` <div class="bopup-content-wrapper">`
 
-
 create element that will trigger the popup.
 
 ##### Example
 
 ```html
-<button class="btn">callback form</button>
+<button class="btn">button</button>
 ```
+
 ```html
-<span class="btn">callback form</span>
+<span class="span">span</span>
 ```
+
 ```html
-<div class="btn">callback form</div>
+<div class="div">div</div>
 ```
 
 ### Initialize bopup
-Finally, we need to initialize bopup in JS:
+
+Finally, you need to initialize bopup in JS:
 
 ```javascript
-let popupForm = new Bopup(
-  document.querySelector('.btn'),
-  document.querySelector('.bopup_form')
-)
+bopup(document.querySelector(".btn"), document.querySelector(".bopup_form"));
 ```
 
 ### css
+
 ```css
- .bopup-content-wrapper {
-   background: #fff;
-  }
+.bopup-content-wrapper {
+  background: #fff;
+}
 ```

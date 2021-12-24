@@ -3,7 +3,7 @@
  * @param {Array|HTMLElement} btn button to show
  * @param {HTMLElement} popup PopUp node
  */
-function Bopup(btn, popup) {
+function bopup(btn, popup) {
   const closePopup = popup.querySelectorAll('.bopup-close-button');
  
   if (btn.length > 1) {
@@ -20,7 +20,6 @@ function Bopup(btn, popup) {
     })
   }
 
-
   closePopup.forEach(item => {
     item.addEventListener('click', closeModal);
   })
@@ -35,7 +34,7 @@ function Bopup(btn, popup) {
     popup.classList.remove('open');
     document.body.style.overflow = "";
   }
-
 }
 
-export default Bopup
+bopup(document.querySelector('.btn'), document.querySelector('.bopup_form'));
+bopup(document.querySelector('.policy-call-btn'), document.querySelector('.form'));
