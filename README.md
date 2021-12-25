@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/bopup-v%200.0.6-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-150-orange">
 
 # <a href=" https://dmitriy-line.github.io/bopup-demo/"> <b style="text-transform:uppercase;">Demonstration Page</b> </a><br>
-
+https://dmitriy-line.github.io/bopup-demo/
 ### Component to create a popup:
 
 ♦ suitable for
