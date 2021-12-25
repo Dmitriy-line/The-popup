@@ -1,6 +1,8 @@
 ## bopup
 
-<img src="https://img.shields.io/badge/bopup-v%200.0.2-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-50-orange">
+<img src="https://img.shields.io/badge/bopup-v%200.0.6-brightgreen"> <img src="https://img.shields.io/badge/Dowloads-150-orange">
+
+# <a href=" https://dmitriy-line.github.io/bopup-demo/"> <b style="text-transform:uppercase;">Demonstration Page</b> </a><br>
 
 ### Component to create a popup:
 
@@ -17,7 +19,7 @@
 ### Import js
 
 ```javascript
-import Bopup from "../../node_modules/bopup/dist/js/bopup.js";
+import bopup from "../../node_modules/bopup/dist/js/bopup.js";
 ```
 
 ### Import css
@@ -68,7 +70,7 @@ create element that will trigger the popup.
 Finally, you need to initialize bopup in JS:
 
 ```javascript
-bopup(document.querySelector(".btn"), document.querySelector(".bopup_form"));
+bopup(document.querySelector('.btn'), document.querySelector('.bopup'));
 ```
 
 ### css

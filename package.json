@@ -1,6 +1,6 @@
 {
 	"name": "bopup",
-	"version": "0.0.2",
+	"version": "0.0.6",
 	"description": "Component to create a popup",
 	"main": "index.html",
 	"author": "Dmitry Pasternak",
