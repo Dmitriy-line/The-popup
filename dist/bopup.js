@@ -3,9 +3,10 @@
  * @param {Array|HTMLElement} btn button to show
  * @param {HTMLElement} popup PopUp node
  */
-export default function bopup(btn, popup) {
+ export default function bopup(btn, popup) {
   const closePopup = popup.querySelectorAll('.bopup-close-button');
 
+  
   if (btn.length > 1) {
     btn.forEach(item => {
       item.addEventListener('click', () => {

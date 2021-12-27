@@ -1,6 +1,6 @@
 
 :root{
-  --popup-bg:rgba(31, 26, 26, 0.836);
+  --popup-bg:rgba(31, 26, 26, 0.897);
 }
 
 
@@ -48,7 +48,6 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 20px 10px;
   max-width: 1000px;
   max-height: 86vh;
   overflow: auto;
